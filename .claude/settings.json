@@ -1,0 +1,37 @@
+{
+  "model": "claude-sonnet-4-6",
+  "projectContext": {
+    "name": "OPS-AGENT Platform",
+    "description": "Plataforma de agentes operativos para Sicoenginy SL, Transports Pau, y Verdemobil Espana. Monorepo Python + Next.js. 3 verticales: SicoOps (tenders 10-20k EUR), PauOps (logistica 10 camiones), TrujilloSales (comercial biometano EU). Stack: Anthropic API (Sonnet+Haiku+caching) + Supabase (pgvector) + n8n Railway + Twilio WhatsApp + Google Maps. SIN LangChain. SIN fine-tuning.",
+    "owner": "Luis Trujillo · Barcelona · 2026",
+    "repo": "https://github.com/Trujiboy/ops-agent-platform"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(git:*)",
+      "Bash(supabase:*)",
+      "Bash(vercel:*)",
+      "Bash(railway:*)",
+      "Bash(pytest:*)",
+      "Bash(black:*)",
+      "Bash(ruff:*)",
+      "Bash(uvicorn:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /*)",
+      "Bash(DROP TABLE*)"
+    ]
+  },
+  "autoApprove": false
+}
